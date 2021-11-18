@@ -1,7 +1,8 @@
 def solution(scores):
     answer = ""
-    r = len(scores[0])
-    for i in range(r):
+
+    for i in range(len(scores[0])):
+        r = len(scores[0])
         selfScore = scores[i][i]
         sums = 0
         maxScore = 0
@@ -23,3 +24,5 @@ def solution(scores):
         else: answer += "F"
 
     return answer
+
+solution([[100,90,98,88,65],[50,45,99,85,77],[47,88,95,80,67],[61,57,100,80,65],[24,90,94,75,65]])
